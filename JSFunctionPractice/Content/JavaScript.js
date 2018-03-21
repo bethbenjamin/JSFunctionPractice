@@ -50,14 +50,16 @@ function luckyNumber() {
 
 
 function max() {
-    var num1 = userNum1;
-    var num2 = userNum2;
+    
     var userNum1 = parseInt(prompt('Please enter a number:'));
     var userNum2 = parseInt(prompt('Please enter a second number:'));
     if (userNum1 > userNum2) {
         alert(+userNum1 + ' is greater');
     }
-    else {
+    else if(userNum1 === userNum2) {
+        alert('These are the same numbers');
+    }
+    else{
         alert(+ userNum2 + ' is greater');
     }
 
@@ -66,16 +68,33 @@ function max() {
 
 //working on next question - is not complete
 
-//function firstOfArray() {
-//    var array1=([7, 9, 0, -2]);
-//    var array1=([[]]);
-//    var array1=([[], 3]);
-//    var array1=([7, 9, 0, -2], 3);
-//    var array1=([7, 9, 0, -2], 6);
-//    var array1=([7, 9, 0, -2], -3);
+function firstOfArray() {
+    //var array1=[7, 9, 0, -2];
+    //var array2=[[]];
+    //var array3=[[], 3];
+    //var array4=[7, 9, 0, -2], 3;
+    //var array5=[7, 9, 0, -2], 6;
+    //var array6=[7, 9, 0, -2], -3;
 
-//    var first = array1.slice(1);
-//    document.getElementById("firstOfArray").innerHTML = first;
-//}
+    //var first = array1.slice(1);
+
+    var array1 = [7, 9, 0, -2]; 
+    var n = 0;
+    n = prompt('please enter a number'); 
+
+    if (n > 0) {
+        alert(array1.slice(0, n));
+    }
+    else if (n < 0) {
+        alert("[]");
+    }
+    else {
+        alert(array1[0]);
+    }
+        
+   
+    //document.getElementById("firstOfArray").innerHTML = list;
+
+}
 
 
